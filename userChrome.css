@@ -1,0 +1,11 @@
+/*put into the "[Firefox User Profile]/chrome" directory
+
+/*hides the native tabs*/
+#TabsToolbar {
+	visibility: collapse;
+}
+
+/*hides the header on the sidebar in firefox extensions (as well as bookmarks, etc)*/
+#sidebar-header {
+	visibility: collapse !important;
+}
