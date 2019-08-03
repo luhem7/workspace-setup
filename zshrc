@@ -100,3 +100,4 @@ export EDITOR='vim'
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # 
 alias vnc-start='vncserver -geometry 1440x900 -alwaysshared -dpi 96 :1'
+alias vim='nvim'
