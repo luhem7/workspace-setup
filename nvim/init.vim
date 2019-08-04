@@ -60,6 +60,23 @@ endfunc
 " Toggle between normal and relative numbering.
 nnoremap <leader>r :call NumberToggle()<cr>
 
+" ### VIM PLUG PLUGINS LIST
+
 call plug#begin()
  " Plug 'roxma/nvim-completion-manager'
+   Plug 'vim-airline/vim-airline'
+   Plug 'ctrlpvim/ctrlp.vim'
+   Plug 'tpope/vim-fugitive'
 call plug#end()
+
+" ### VIM AIRLINE SETUP
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+
+" ### VIM CTRLP CONFIG
+" Open file menu
+nnoremap <Leader>o :CtrlP<CR>
+" Open buffer menu
+nnoremap <Leader>b :CtrlPBuffer<CR>
+" Open most recently used files
+nnoremap <Leader>f :CtrlPMRUFiles<CR>
