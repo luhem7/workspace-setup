@@ -1,0 +1,5 @@
+conda activate $*
+if [[ "$?" == 0 ]]
+then
+    echo "$* " > ~/.curr_conda_env.txt
+fi

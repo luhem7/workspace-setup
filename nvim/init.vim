@@ -60,6 +60,15 @@ endfunc
 " Toggle between normal and relative numbering.
 nnoremap <leader>r :call NumberToggle()<cr>
 
+" More intuitive pane navigation
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+" Mouse support
+set mouse=a
+
 " ### VIM PLUG PLUGINS LIST
 
 call plug#begin()

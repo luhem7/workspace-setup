@@ -114,7 +114,13 @@ else
 fi
 unset __conda_setup
 
+# Stop conda from displaying the environment name in the PS1 prompt
+conda config --set changeps1 false
 
+# Load custom zsh functions
+fpath=( ~/.zsh_funcs.d "${fpath[@]}" )
+autoload -Uz hello c-act d-act
 
 alias vnc-start='vncserver -geometry 1440x900 -alwaysshared -dpi 96 :1'
 alias vim='nvim'
+alias c-list='conda info --envs'

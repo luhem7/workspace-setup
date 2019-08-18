@@ -1,0 +1,2 @@
+conda deactivate
+echo "" > ~/.curr_conda_env.txt
